@@ -4,9 +4,13 @@ Docker image with BurpSuite Pro edition and Rest/JSON API endpoint by [VMWare](h
 
 Note that you will still need to accept the license and provide the key manually.
 
-## How to run
+## How to use
 ``
-docker run -p 8080:8080 -p 8090:8090 -it burpsuite-pro-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar --burp.edition=free
+docker build -t burpsuite-pro-api .
+``
+
+``
+docker run -p 8080:8080 -p 8090:8090 -it burpsuite-pro-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar
 ``
 
 ## Rest/JSON endpoints
