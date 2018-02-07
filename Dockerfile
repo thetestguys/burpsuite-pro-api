@@ -13,3 +13,5 @@ WORKDIR /var/local/burp-rest-api/
 EXPOSE 8080 8090
 
 RUN ./gradlew clean build -x test
+
+ENTRYPOINT java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar

@@ -10,7 +10,7 @@ docker build -t burpsuite-pro-api .
 ``
 
 ``
-docker run -p 8080:8080 -p 8090:8090 -it burpsuite-pro-api java -jar /var/local/burp-rest-api/build/libs/burp-rest-api-1.0.0.jar
+docker run -p 8080:8080 -p 8090:8090 -it burpsuite-pro-api
 ``
 
 ## Rest/JSON endpoints
